@@ -9,4 +9,8 @@ let numero4 = prompt("Inserisci un numero");
 let numero5 = prompt("Inserisci un numero");
 let numero6 = prompt("Inserisci un numero");
 
+if ((numero1 % 2) = 0){
+    arrayNumeri.push(numero1);
+    console.log(arrayNumeri);
+}
 
