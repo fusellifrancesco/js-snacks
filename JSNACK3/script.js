@@ -14,3 +14,9 @@ let numero10 = prompt("Inserisci un numero casuale");
 let somma = Number(numero1)+Number(numero2)+Number(numero3)+Number(numero4)+Number(numero5)+
             Number(numero6)+Number(numero7)+Number(numero8)+Number(numero9)+Number(numero10);
 
+console.log(
+    `
+    ------LA SOMMA DEI NUMERI INSERITI É:------
+    ${somma}
+    `
+);
