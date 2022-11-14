@@ -1,3 +1,4 @@
+/*
 // Chiedo l'input all'utente di 10 numeri
 let numero1 = prompt("Inserisci un numero casuale");
 let numero2 = prompt("Inserisci un numero casuale");
@@ -13,10 +14,17 @@ let numero10 = prompt("Inserisci un numero casuale");
 // Converto le stringhe in numeri, le sommo e stampo il risultato
 let somma = Number(numero1)+Number(numero2)+Number(numero3)+Number(numero4)+Number(numero5)+
             Number(numero6)+Number(numero7)+Number(numero8)+Number(numero9)+Number(numero10);
+*/
+
+
+for (i = 0; i <= 10; i++){
+    let numero = prompt("Inserisci un numero");
+    let somma = numero * i
+}
 
 console.log(
     `
     ------LA SOMMA DEI NUMERI INSERITI É:------
-    ${somma}
+    ${}
     `
 );
