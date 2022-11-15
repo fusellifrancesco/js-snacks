@@ -16,15 +16,32 @@ let somma = Number(numero1)+Number(numero2)+Number(numero3)+Number(numero4)+Numb
             Number(numero6)+Number(numero7)+Number(numero8)+Number(numero9)+Number(numero10);
 */
 
+let numeroUtente;
+let arrayNumeri = [];
 
-for (i = 0; i <= 10; i++){
-    let numero = prompt("Inserisci un numero");
-    let somma = numero * i
+for (i = 0; i < 10; i++){
+
+    // Chiedo 10 numeri all'utente
+    numeroUtente = parseInt(prompt("Inserisci un numero"));
+    
+    // Inserisco numero digitato nell'array
+    arrayNumeri.push(numeroUtente);
 }
 
-console.log(
-    `
-    ------LA SOMMA DEI NUMERI INSERITI É:------
-    ${}
-    `
-);
+// Stampo elementi array
+console.log(arrayNumeri);
+
+// Creo variabile somma
+let somma = 0;
+for (i = 0; i < arrayNumeri.length; i++){
+
+    // Stampo elementi array
+    numeroUtente = arrayNumeri[i];
+    console.log(i + ". " + numeroUtente);
+    
+    // Somma elementi
+    somma += numeroUtente;
+}
+
+console.log("La somma è: " + somma);
+

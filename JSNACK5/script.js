@@ -1,16 +1,22 @@
 // Dichiaro un array vuoto
 let arrayNumeri = [];
 
+// Chiedo 6 input all'utente
 for (i = 0; i < 6; i++){
-    let numero = prompt("Inserisci un numero");
+    let numero = parseInt(prompt("Inserisci un numero"));
+    
+    // Controllo quando un numero è dispari 
     let restoNumero = numero % 2;
     
     if (restoNumero != 0){
+        
+        // quando il numero è dispari lo aggiungo all'array
         arrayNumeri.push(numero);
     }
-    
 }
 
+
+// stampo l'array
 console.log(arrayNumeri);
 
 
